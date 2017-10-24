@@ -4,10 +4,10 @@ namespace FizzBuzzLib
 {
     public class GetFizzBuzz
     {
-        public List<string> FizzBuzz(int input)
+        public List<string> FizzBuzz(int input1, int input2)
         {
             List<string> results = new List<string>();
-            for (int number = 1; number <= input; number++)
+            for (int number = input1; number <= input2; number++)
             {
                 //Console.WriteLine("{0}", i % 15 == 0 ? "FizzBuzz" : (i % 3 == 0 ? "Fizz" : (i % 5 == 0 ? "Buzz" : i.ToString())));
 
