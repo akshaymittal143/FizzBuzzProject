@@ -1,6 +1,5 @@
 ﻿using FizzBuzzLib;
 using System;
-using System.Collections.Generic;
 
 namespace FizzBuzzCore
 {
@@ -41,13 +40,10 @@ namespace FizzBuzzCore
             }
 
             GetFizzBuzz result = new GetFizzBuzz();
-            List<string> results = new List<string>();
-            results = result.FizzBuzz(minNumber, maxNumber); //calling library function
+            //List<string> results = new List<string>();
+            result.FizzBuzz(minNumber, maxNumber, new WriteToConsole()); //calling library function
 
-            foreach (var item in results)
-            {
-                Console.WriteLine(item);
-            }
+
             Console.WriteLine("---------------------------- Ending Fizz Buzz -----------------------------------");
 
         }
